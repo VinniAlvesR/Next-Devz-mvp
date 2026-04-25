@@ -25,7 +25,7 @@ export function Services() {
   ]
 
   return (
-    <section id="servicos" className="py-16 lg:py-24 bg-gray-950">
+    <section id="servicos" className="min-h-screen snap-start py-16 lg:py-24 bg-gray-950">
       <div className="container mx-auto px-2 sm:px-4">
         <div className="max-w-6xl mx-auto">
           {/* Header */}

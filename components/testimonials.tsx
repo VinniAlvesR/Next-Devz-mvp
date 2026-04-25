@@ -2,7 +2,7 @@ import { Star, MessageCircle } from "lucide-react"
 
 export function Testimonials() {
   return (
-    <section className="py-16 lg:py-24 bg-gray-950">
+    <section className="min-h-screen snap-start py-16 lg:py-24 bg-gray-950">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto px-2 sm:px-4">
           {/* Header */}
@@ -17,9 +17,15 @@ export function Testimonials() {
             <div className="w-14 sm:w-16 h-14 sm:h-16 bg-yellow-600 rounded-full mx-auto mb-4 sm:mb-6 flex items-center justify-center">
               <MessageCircle className="w-7 sm:w-8 h-7 sm:h-8 text-white" />
             </div>
-            <h3 className="text-lg sm:text-xl font-semibold text-white mb-3 sm:mb-4">Em breve, feedbacks reais</h3>
             <p className="text-gray-400 mb-6 sm:mb-8 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
-              Espaço reservado para os depoimentos dos clientes satisfeitos com os projetos desenvolvidos.
+              "Antes da Next Devz, nosso Instagram até tinha movimento, mas quase não virava cliente.
+              Depois que eles criaram uma página direcionando direto pro WhatsApp, tudo mudou.
+
+              Começamos a receber mensagens todos os dias de pessoas realmente interessadas.
+              Foi simples, rápido e deu resultado de verdade."
+            </p>
+            <p className="text-lg sm:text-xl font-semibold text-white">
+              — João Silva, Barbearia Prime
             </p>
             <div className="flex justify-center space-x-1">
               {[...Array(5)].map((_, i) => (

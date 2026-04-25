@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className={`${inter.className} ${orbitron.variable}`}>
+      <body className={`${inter.className} ${orbitron.variable} snap-y snap-mandatory`}>
         {children}
         <Toaster />
       </body>

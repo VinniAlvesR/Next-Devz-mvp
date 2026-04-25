@@ -36,7 +36,7 @@ export function Footer() {
           </nav>
 
           {/* Copyright */}
-          <p className="text-gray-400 text-xs sm:text-sm">© 2025 Next Devz</p>
+          <p className="text-gray-400 text-xs sm:text-sm">© 2026 Next Devz</p>
         </div>
       </div>
     </footer>

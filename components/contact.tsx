@@ -55,7 +55,7 @@ export function Contact() {
   }
 
   return (
-    <section id="contato" className="py-16 lg:py-24 bg-gray-950">
+    <section id="contato" className="min-h-screen snap-start py-16 lg:py-24 bg-gray-950">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto px-2 sm:px-4">
           <div className="text-center mb-12 sm:mb-16">

@@ -4,7 +4,7 @@ import { ArrowRight, Code2 } from "lucide-react"
 
 export function Hero() {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-gray-950 relative">
+    <section id="home" className="min-h-screen snap-start flex items-center justify-center bg-gray-950 relative">
       <div className="container mx-auto px-4 text-center">
         <div className="max-w-3xl mx-auto space-y-8">
           <div className="mb-6 sm:mb-8 flex justify-center">
