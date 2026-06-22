@@ -1,40 +1,10 @@
-import { Star, MessageCircle } from "lucide-react"
+import { Gauge, Headphones, Layout, MonitorSmartphone, MousePointerClick, Sparkles } from "lucide-react"
+
+const reasons = [
+  [Headphones, "Atendimento direto"], [Sparkles, "Design sob medida"], [MousePointerClick, "Foco em conversão"],
+  [Gauge, "Performance otimizada"], [MonitorSmartphone, "Projeto responsivo"], [Layout, "Entrega profissional"],
+] as const
 
 export function Testimonials() {
-  return (
-    <section className="min-h-screen snap-start py-16 lg:py-24 bg-gray-950">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto px-2 sm:px-4">
-          {/* Header */}
-          <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4">Depoimentos</h2>
-            <div className="w-12 h-1 bg-blue-500 mx-auto mb-4 sm:mb-6"></div>
-            <p className="text-base sm:text-lg text-gray-400">O que os clientes dizem sobre o trabalho</p>
-          </div>
-
-          {/* Content */}
-          <div className="text-center p-6 sm:p-8 lg:p-12 bg-gray-900 rounded-2xl">
-            <div className="w-14 sm:w-16 h-14 sm:h-16 bg-yellow-600 rounded-full mx-auto mb-4 sm:mb-6 flex items-center justify-center">
-              <MessageCircle className="w-7 sm:w-8 h-7 sm:h-8 text-white" />
-            </div>
-            <p className="text-gray-400 mb-6 sm:mb-8 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
-              "Antes da Next Devz, nosso Instagram até tinha movimento, mas quase não virava cliente.
-              Depois que eles criaram uma página direcionando direto pro WhatsApp, tudo mudou.
-
-              Começamos a receber mensagens todos os dias de pessoas realmente interessadas.
-              Foi simples, rápido e deu resultado de verdade."
-            </p>
-            <p className="text-lg sm:text-xl font-semibold text-white">
-              — João Silva, Barbearia Prime
-            </p>
-            <div className="flex justify-center space-x-1">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-4 sm:w-5 h-4 sm:h-5 text-yellow-500 fill-current" />
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  )
+  return <section id="depoimentos" className="section-pad border-y border-white/5 bg-[#080d19]/70"><div className="container"><div className="mx-auto max-w-2xl text-center"><span className="eyebrow">Um parceiro para seu projeto</span><h2 className="display-title mt-5 text-4xl font-bold text-white sm:text-5xl">Por que escolher a <span className="gradient-text">Next Devz?</span></h2></div><div className="mt-14 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">{reasons.map(([Icon,title]) => <article key={title} className="surface group flex items-center gap-4 rounded-2xl p-5"><span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-blue-500/10"><Icon className="h-5 w-5 text-blue-400"/></span><h3 className="text-sm font-semibold text-slate-200">{title}</h3></article>)}</div></div></section>
 }

@@ -1,20 +1,20 @@
 import { Header } from "@/components/header"
 import { Hero } from "@/components/hero"
-import { About } from "@/components/about"
 import { Services } from "@/components/services"
-import { Testimonials } from "@/components/testimonials"
+import { Method } from "@/components/method"
+import { Conversion } from "@/components/conversion"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-950">
+    <div className="min-h-screen overflow-hidden bg-[#050914]">
       <Header />
       <main>
         <Hero />
-        <About />
         <Services />
-        <Testimonials />
+        <Method />
+        <Conversion />
         <Contact />
       </main>
       <Footer />
